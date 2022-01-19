@@ -21,16 +21,16 @@ Each of the Python scripts have three parts: a MerkleNode class, a MerkleTree cl
 
 The core of MerkleTree is based on appending to an array that contains MerkleNode elements. MerkleNode elements come in two types: one has data (hereinafter leaf node) and one has two children (hereinafter hash node). Both have hashes associated with them. When someone wants to insert data into the Merkle tree, only two things are done: a hash node is appended to the array and then a leaf node is added to the array. This makes visualizing the array very easy. For example, if we have an array with labeled nodes [1, 2, 3, 4, 5,], it will look like this:
 
-		4
-	     /      \
+                 4
+              /      \
           2             5
        /     \
      1         3
 
 And an array with labelled nodes [1, 2, 3, 4, 5, 6, 7] will look like this:
 
-		4
-	     /      \
+                 4
+              /      \
           2             6
        /     \       /     \
      1         3   5         7
