@@ -6,7 +6,7 @@ Python version 3.6+
 
 What Is This?
 -------------
-This is a simple python script that opens a file called "hashes.txt" and for each MD5 hash in it (separated by a newline), it will attempt to crack it. A sample hashes.txt is given.
+This is a simple implementation of a Merkle Tree with three key pieces of functionality: adding to the tree, searching in the tree, and checks the consistency of two trees (i.e., if one tree is in another tree).
 
 
 How To Use This
